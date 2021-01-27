@@ -61,7 +61,7 @@ const messages = defineMessages({
 const defaultMenuItem = (title) => ({
   title,
   visible: true,
-  linkUrl: [],
+  linkUrl: null,
 });
 
 const defaultRootMenu = (title) => ({

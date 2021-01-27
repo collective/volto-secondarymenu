@@ -72,6 +72,15 @@
   padding-left: 0.5rem;
 }
 
+.secondary-menu-configuration-widget .ui.icon.input + button {
+  border: 0;
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: calc(100% - 0.5rem);
+  margin-top: 0.5rem;
+}
+
 .secondary-menu-configuration-widget #menupath-delete.field.delete .column,
 .secondary-menu-configuration-widget #menu-delete.field.delete .column {
   justify-content: center;

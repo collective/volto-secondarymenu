@@ -236,10 +236,7 @@ const SecondaryMenuConfigurationWidget = ({
                         >
                           <Grid>
                             <Grid.Row stretched>
-                              <Grid.Column width={4}>
-                                <div className="wrapper"></div>
-                              </Grid.Column>
-                              <Grid.Column width={8}>
+                              <Grid.Column width={12}>
                                 <Button
                                   icon="trash"
                                   negative

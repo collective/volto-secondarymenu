@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { defineMessages, useIntl } from 'react-intl';
-import { v4 as uuid } from 'uuid';
-import { Form as UIForm, Grid, Button } from 'semantic-ui-react';
+import { Form, Grid, Button } from 'semantic-ui-react';
 import {
   TextWidget,
   CheckboxWidget,
@@ -123,7 +122,7 @@ const SecondaryMenuConfigurationForm = ({
         onChange={(id, value) => onChangeFormData('visible', value)}
       />
 
-      <div className="delete wide" id="menu-delete">
+      <Form.Field inline className="delete wide" id="menu-delete">
         <Grid>
           <Grid.Row stretched>
             <Grid.Column width={12}>
@@ -137,7 +136,7 @@ const SecondaryMenuConfigurationForm = ({
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </div>
+      </Form.Field>
       <Portal node={document.getElementById('sidebar')}>
         <Sidebar />
       </Portal>

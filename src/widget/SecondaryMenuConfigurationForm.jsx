@@ -20,29 +20,10 @@ const messages = defineMessages({
     id: 'secondarymenu-linkUrl',
     defaultMessage: 'Link',
   },
-  navigationRoot: {
-    id: 'secondarymenu-navigationRoot',
-    defaultMessage: 'Navigation root',
-  },
-  showMoreLink: {
-    id: 'secondarymenu-showMoreLink',
-    defaultMessage: '"Show more" link',
-  },
-  showMoreText: {
-    id: 'secondarymenu-showMoreText',
-    defaultMessage: '"Show more" link text',
-  },
-  blocks: {
-    id: 'secondarymenu-blocks',
-    defaultMessage: 'Blocks',
-  },
-  blocks_description: {
-    id: 'secondarymenu-blocks-description',
-    defaultMessage: 'Add some blocks to show in dropdown menu.',
-  },
-  deleteMenuItem: {
-    id: 'secondarymenu-deletemenuitem',
-    defaultMessage: 'Delete menu item',
+  linkUrl_description: {
+    id: 'secondarymenu-linkUrl_description',
+    defaultMessage:
+      'Type an external url, or select an internal url clicking on the right button',
   },
   deleteButton: {
     id: 'secondarymenu-deletemenuitem-button',
@@ -115,7 +96,7 @@ const SecondaryMenuConfigurationForm = ({
       <TextWidget
         id={`${id}-linkUrl`}
         title={intl.formatMessage(messages.linkUrl)}
-        description=""
+        description={intl.formatMessage(messages.linkUrl_description)}
         required={true}
         value={menuItem.linkUrl}
         icon={menuItem.linkUrl ? clearSVG : navTreeSVG}

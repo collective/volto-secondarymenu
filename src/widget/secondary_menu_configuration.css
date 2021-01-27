@@ -1,0 +1,91 @@
+.secondary-menu-configuration-widget .menu-blocks-container {
+  padding: 2em;
+}
+
+.secondary-menu-configuration-widget
+  .menu-blocks-container
+  .block
+  .toolbar-inner
+  .ui.input
+  input {
+  height: unset;
+}
+
+#menu-configuration {
+  margin: 1em 0;
+}
+
+.secondary-menu-configuration-widget .ui.header.secondarymenu-items-header {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.secondary-menu-configuration-widget .ui.menu.menu-path-menu .item button.mini {
+  font-size: 0.78571429rem;
+}
+
+.secondary-menu-configuration-widget .ui.menu.menu-items-menu h2 {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-size: 1em;
+}
+
+.secondary-menu-configuration-widget .ui.menu.menu-items-menu .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.secondary-menu-configuration-widget .ui.menu.menu-items-menu .item span {
+  margin-left: 0.5rem;
+}
+
+.secondary-menu-configuration-widget
+  .ui.menu.menu-items-menu
+  .item
+  button.ui.button {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.secondary-menu-configuration-widget
+  .ui.menu.menu-items-menu
+  .item
+  button.ui.button
+  i.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+
+.secondary-menu-configuration-widget .ui.menu.menu-path-menu .item span,
+.secondary-menu-configuration-widget .ui.menu.menu-items-menu .item span {
+  display: inline-block;
+  min-width: 3rem;
+  flex: 1;
+}
+
+.secondary-menu-configuration-widget .ui.menu.menu-items-menu .item span {
+  padding-left: 0.5rem;
+}
+
+.secondary-menu-configuration-widget #menupath-delete.field.delete .column,
+.secondary-menu-configuration-widget #menu-delete.field.delete .column {
+  justify-content: center;
+}
+
+button#delete-menupath,
+button#delete-menuitem {
+  display: inline-block;
+  flex-grow: 0;
+  align-self: self-start;
+}
+
+.secondary-menu-configuration-widget .secondarymenu-rootpath-segment {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #c7d5d8;
+  margin-bottom: 3rem;
+}

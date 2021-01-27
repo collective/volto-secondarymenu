@@ -72,13 +72,13 @@
   padding-left: 0.5rem;
 }
 
-.secondary-menu-configuration-widget .ui.icon.input + button {
+.secondary-menu-configuration-widget .field.text .ui.icon.input + button {
   border: 0;
   background-color: transparent;
-  padding-top: 0;
-  padding-bottom: 0;
-  height: calc(100% - 0.5rem);
-  margin-top: 0.5rem;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: calc(100% - 0.5rem) !important;
+  margin-top: 0.5rem !important;
 }
 
 .secondary-menu-configuration-widget #menupath-delete.field.delete .column,
@@ -87,8 +87,8 @@
   padding: 1em 0;
 }
 
-button#delete-menupath,
-button#delete-menuitem {
+.secondary-menu-configuration-widget button#delete-menupath,
+.secondary-menu-configuration-widget button#delete-menuitem {
   display: inline-block;
   flex-grow: 0;
   align-self: center;

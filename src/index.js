@@ -8,13 +8,11 @@ export default (config) => {
   config.widgets.id = {
     ...config.widgets.id,
     secondarymenu_configuration: SecondaryMenuConfigurationWidget,
-    menu_configuration: SecondaryMenuConfigurationWidget,
   };
 
   config.addonReducers = {
     ...config.addonReducers,
     secondaryMenu: secondaryMenuReducer,
-    // dropdownMenuNavItems: secondaryMenuReducer,
   };
 
   return config;

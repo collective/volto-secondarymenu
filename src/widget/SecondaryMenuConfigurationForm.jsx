@@ -166,9 +166,6 @@ const SecondaryMenuConfigurationForm = ({
           </Grid.Row>
         </Grid>
       </Form.Field>
-      <Portal node={document.getElementById('sidebar')}>
-        <Sidebar />
-      </Portal>
     </>
   );
 };

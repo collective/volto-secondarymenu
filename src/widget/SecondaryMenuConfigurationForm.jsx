@@ -104,15 +104,6 @@ const SecondaryMenuConfigurationForm = ({
         value={menuItem.title}
         onChange={(id, value) => onChangeFormData('title', value)}
       />
-      <CheckboxWidget
-        id={`${id}-visible`}
-        title={intl.formatMessage(messages.visible)}
-        description=""
-        defaultValue={true}
-        value={!!menuItem.visible}
-        onChange={(id, value) => onChangeFormData('visible', value)}
-      />
-
       <ObjectBrowserWidget
         id={`${id}-linkUrl`}
         title={intl.formatMessage(messages.linkUrl)}
@@ -123,13 +114,19 @@ const SecondaryMenuConfigurationForm = ({
         onChange={(id, value) => onChangeFormData('linkUrl', value)}
       />
 
-      <UIForm.Field inline className="delete wide" id="menu-delete">
+      <CheckboxWidget
+        id={`${id}-visible`}
+        title={intl.formatMessage(messages.visible)}
+        description=""
+        defaultValue={true}
+        value={!!menuItem.visible}
+        onChange={(id, value) => onChangeFormData('visible', value)}
+      />
+
+      <div className="delete wide" id="menu-delete">
         <Grid>
           <Grid.Row stretched>
-            <Grid.Column width={4}>
-              <div className="wrapper"></div>
-            </Grid.Column>
-            <Grid.Column width={8}>
+            <Grid.Column width={12}>
               <Button
                 icon="trash"
                 onClick={deleteMenuItem}
@@ -140,7 +137,7 @@ const SecondaryMenuConfigurationForm = ({
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </UIForm.Field>
+      </div>
       <Portal node={document.getElementById('sidebar')}>
         <Sidebar />
       </Portal>

@@ -73,7 +73,7 @@
 }
 
 .secondary-menu-configuration-widget #menupath-delete.field.delete .column,
-.secondary-menu-configuration-widget #menu-delete.field.delete .column {
+.secondary-menu-configuration-widget #menu-delete.delete .column {
   justify-content: center;
 }
 

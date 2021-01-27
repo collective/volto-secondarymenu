@@ -1,12 +1,17 @@
 import React, { useEffect } from 'react';
+import { compose } from 'redux';
 import { defineMessages, useIntl } from 'react-intl';
 import { Form, Grid, Button } from 'semantic-ui-react';
+import withObjectBrowser from '@plone/volto/components/manage/Sidebar/ObjectBrowser';
 import {
   TextWidget,
   CheckboxWidget,
   ObjectBrowserWidget,
   Sidebar,
 } from '@plone/volto/components';
+import navTreeSVG from '@plone/volto/icons/nav.svg';
+import clearSVG from '@plone/volto/icons/clear.svg';
+
 import { Portal } from 'react-portal';
 
 const messages = defineMessages({
@@ -57,6 +62,7 @@ const SecondaryMenuConfigurationForm = ({
   menuItem,
   onChange,
   deleteMenuItem,
+  openObjectBrowser,
 }) => {
   const intl = useIntl();
 
@@ -113,6 +119,29 @@ const SecondaryMenuConfigurationForm = ({
         onChange={(id, value) => onChangeFormData('linkUrl', value)}
       />
 
+      <TextWidget
+        id={`${id}-linkUrl`}
+        title={intl.formatMessage(messages.linkUrl)}
+        description=""
+        required={true}
+        value={menuItem.linkUrl ?? []}
+        icon={menuItem.linkUrl ? clearSVG : navTreeSVG}
+        iconAction={
+          menuItem.linkUrl
+            ? () => {
+                onChangeFormData('linkUrl', '');
+              }
+            : () =>
+                openObjectBrowser({
+                  mode: 'link',
+                  onSelectItem: (url) => {
+                    onChangeFormData('linkUrl', url);
+                  },
+                })
+        }
+        onChange={onChangeFormData}
+      />
+
       <CheckboxWidget
         id={`${id}-visible`}
         title={intl.formatMessage(messages.visible)}
@@ -144,4 +173,6 @@ const SecondaryMenuConfigurationForm = ({
   );
 };
 
-export default React.memo(SecondaryMenuConfigurationForm);
+export default React.memo(
+  compose(withObjectBrowser)(SecondaryMenuConfigurationForm),
+);

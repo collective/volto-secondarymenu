@@ -73,15 +73,16 @@
 }
 
 .secondary-menu-configuration-widget #menupath-delete.field.delete .column,
-.secondary-menu-configuration-widget #menu-delete.delete .column {
+.secondary-menu-configuration-widget #menu-delete.field.delete .column {
   justify-content: center;
+  padding: 1em 0;
 }
 
 button#delete-menupath,
 button#delete-menuitem {
   display: inline-block;
   flex-grow: 0;
-  align-self: self-start;
+  align-self: center;
 }
 
 .secondary-menu-configuration-widget .secondarymenu-rootpath-segment {

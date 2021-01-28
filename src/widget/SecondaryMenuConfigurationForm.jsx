@@ -73,6 +73,9 @@ const SecondaryMenuConfigurationForm = ({
     onChange({ ...menuItem, [id]: value });
   };
 
+  const url =
+    menuItem.linkUrl?.[0]?.['@id'] ?? menuItem.linkUrl?.[0]?.href ?? null;
+  console.log(menuItem.linkUrl, url);
   return (
     <>
       <TextWidget
@@ -98,24 +101,23 @@ const SecondaryMenuConfigurationForm = ({
         title={intl.formatMessage(messages.linkUrl)}
         description={intl.formatMessage(messages.linkUrl_description)}
         required={true}
-        value={menuItem.linkUrl}
-        icon={menuItem.linkUrl ? clearSVG : navTreeSVG}
+        value={url}
+        icon={url ? clearSVG : navTreeSVG}
         iconAction={
-          menuItem.linkUrl
+          url
             ? () => {
                 onChangeFormData('linkUrl', '');
               }
             : () =>
                 openObjectBrowser({
                   mode: 'link',
-                  onSelectItem: (url) => {
-                    onChangeFormData('linkUrl', url);
+                  onSelectItem: (url, item) => {
+                    onChangeFormData('linkUrl', [item]);
                   },
                 })
         }
-        onChange={(id, value) => onChangeFormData('linkUrl', value)}
+        onChange={(id, value) => onChangeFormData('linkUrl', [{ href: value }])}
       />
-
       <CheckboxWidget
         id={`${id}-visible`}
         title={intl.formatMessage(messages.visible)}
@@ -124,7 +126,6 @@ const SecondaryMenuConfigurationForm = ({
         value={!!menuItem.visible}
         onChange={(id, value) => onChangeFormData('visible', value)}
       />
-
       <Form.Field inline className="delete wide" id="menu-delete">
         <Grid>
           <Grid.Row stretched>

@@ -17,6 +17,10 @@ const messages = defineMessages({
     id: 'secondarymenu-visible',
     defaultMessage: 'Visible',
   },
+  inEvidence: {
+    id: 'secondarymenu-inevidence',
+    defaultMessage: 'In evidence',
+  },
   linkUrl: {
     id: 'secondarymenu-linkUrl',
     defaultMessage: 'Link',
@@ -126,6 +130,15 @@ const SecondaryMenuConfigurationForm = ({
         value={!!menuItem.visible}
         onChange={(id, value) => onChangeFormData('visible', value)}
       />
+      <CheckboxWidget
+        id={`${id}-inEvidence`}
+        title={intl.formatMessage(messages.inEvidence)}
+        description=""
+        defaultValue={false}
+        value={!!menuItem.inEvidence}
+        onChange={(id, value) => onChangeFormData('inEvidence', value)}
+      />
+
       <Form.Field inline className="delete wide" id="menu-delete">
         <Grid>
           <Grid.Row stretched>

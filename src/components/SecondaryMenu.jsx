@@ -54,7 +54,9 @@ const SecondaryMenu = ({ pathname }) => {
                 key={i}
                 className={`item ${isMenuActive(url) && 'active'}`}
               >
-                <span>{item.title}</span>
+                <span className={item.inEvidence ? 'in-evidence' : ''}>
+                  {item.title}
+                </span>
                 {isMenuActive(url) && (
                   <span className="sr-only">
                     {intl.formatMessage(messages.menu_selected)}

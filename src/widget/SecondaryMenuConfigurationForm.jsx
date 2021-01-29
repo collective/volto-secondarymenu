@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { compose } from 'redux';
 import { defineMessages, useIntl } from 'react-intl';
 import { Form, Grid, Button } from 'semantic-ui-react';
+import { flattenToAppURL } from '@plone/volto/helpers';
 import withObjectBrowser from '@plone/volto/components/manage/Sidebar/ObjectBrowser';
 import { TextWidget, CheckboxWidget } from '@plone/volto/components';
 import navTreeSVG from '@plone/volto/icons/nav.svg';
@@ -73,9 +74,8 @@ const SecondaryMenuConfigurationForm = ({
     onChange({ ...menuItem, [id]: value });
   };
 
-  const url =
-    menuItem.linkUrl?.[0]?.['@id'] ?? menuItem.linkUrl?.[0]?.href ?? null;
-  console.log(menuItem.linkUrl, url);
+  const url = menuItem.linkUrl?.[0]?.['@id'] ?? menuItem.href ?? null;
+
   return (
     <>
       <TextWidget
@@ -101,7 +101,7 @@ const SecondaryMenuConfigurationForm = ({
         title={intl.formatMessage(messages.linkUrl)}
         description={intl.formatMessage(messages.linkUrl_description)}
         required={true}
-        value={url}
+        value={url ? flattenToAppURL(url) : null}
         icon={url ? clearSVG : navTreeSVG}
         iconAction={
           url
@@ -116,7 +116,7 @@ const SecondaryMenuConfigurationForm = ({
                   },
                 })
         }
-        onChange={(id, value) => onChangeFormData('linkUrl', [{ href: value }])}
+        onChange={(id, value) => onChangeFormData('href', value)}
       />
       <CheckboxWidget
         id={`${id}-visible`}

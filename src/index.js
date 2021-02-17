@@ -15,6 +15,16 @@ export default (config) => {
     ...config.addonReducers,
     secondaryMenu: secondaryMenuReducer,
   };
+  
+  config.settings.extendableAsyncConnect = [
+    ...config.settings.extendableAsyncConnect,
+    {
+      key: 'secondary-menu',
+      promise: ({ location, store: { dispatch } }) => {
+        __SERVER__ && dispatch(getSecondaryMenu());
+      },
+    },
+  ];
 
   return config;
 };

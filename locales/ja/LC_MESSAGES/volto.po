@@ -11,11 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
- #: components/SecondaryMenu
-msgid "Menu selezionato"
-msgstr ""
-
-#: widget/SecondaryMenuConfigurationWidget
+ #: widget/SecondaryMenuConfigurationWidget
 msgid "secondarymenu-add-rootpath"
 msgstr ""
 
@@ -53,6 +49,10 @@ msgstr ""
 
 #: widget/SecondaryMenuConfigurationForm
 msgid "secondarymenu-linkUrl_description"
+msgstr ""
+
+#: components/SecondaryMenu
+msgid "secondarymenu-menu-selected"
 msgstr ""
 
 #: widget/SecondaryMenuConfigurationWidget

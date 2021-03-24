@@ -10,8 +10,8 @@ import { Menu } from 'semantic-ui-react';
 
 const messages = defineMessages({
   menu_selected: {
-    id: 'Menu selezionato',
-    defaultMessage: 'Menu selezionato',
+    id: 'secondarymenu-menu-selected',
+    defaultMessage: 'Selected menu',
   },
 });
 

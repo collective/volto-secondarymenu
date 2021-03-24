@@ -9,4 +9,6 @@ Created with [voltocli](https://github.com/nzambello/voltocli).
 
 ## Usage
 
+> If you're using Volto < 12, then use [v1.1.0](https://github.com/collective/volto-secondarymenu/tree/v1.1.0)
+
 `Document your addon here`

@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+ #: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-add-rootpath"
+msgstr "Aggiungi radice di navigazione"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-addmenuitem"
+msgstr "Aggiungi un elemento del menu"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-delete-button"
+msgstr "Elimina il menu"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-delete-menupath"
+msgstr "Elimina"
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-deletemenuitem-button"
+msgstr "Elimna la voce di menu"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-emptyActiveMenuItem"
+msgstr "Seleziona una voce di menu"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-emptyActiveMenuPath"
+msgstr "Seleziona una radice di navigazione"
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-inevidence"
+msgstr "In evidenza"
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-linkUrl"
+msgstr "Link"
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-linkUrl_description"
+msgstr "Scrivi un url esterno o seleziona un URL interno cliccando sul bottone a destra"
+
+#: components/SecondaryMenu
+msgid "secondarymenu-menu-selected"
+msgstr "Menu selezionato"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-menuitems-header"
+msgstr "Voci del menu"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-move-menuitem-down"
+msgstr "Sposta dopo"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-move-menuitem-up"
+msgstr "Sposta prima"
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-rootpath"
+msgstr "Radice del menu"
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-title"
+msgstr "Titolo"
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-visible"
+msgstr "Visibile"

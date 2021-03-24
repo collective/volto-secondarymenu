@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+ #: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-add-rootpath"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-addmenuitem"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-delete-button"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-delete-menupath"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-deletemenuitem-button"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-emptyActiveMenuItem"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-emptyActiveMenuPath"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-inevidence"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-linkUrl"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-linkUrl_description"
+msgstr ""
+
+#: components/SecondaryMenu
+msgid "secondarymenu-menu-selected"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-menuitems-header"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-move-menuitem-down"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-move-menuitem-up"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationWidget
+msgid "secondarymenu-rootpath"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-title"
+msgstr ""
+
+#: widget/SecondaryMenuConfigurationForm
+msgid "secondarymenu-visible"
+msgstr ""

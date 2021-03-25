@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { flattenToAppURL } from '@plone/volto/helpers';
 import { UniversalLink } from '@plone/volto/components';
 import { getSecondaryMenu } from '../actions';
+import { getItemsByPath } from '../utils';
 import { Menu } from 'semantic-ui-react';
 
 const messages = defineMessages({
@@ -19,13 +20,10 @@ const SecondaryMenu = ({ pathname }) => {
   const intl = useIntl();
   const dispatch = useDispatch();
 
-  let items =
-    useSelector((state) => state.secondaryMenu?.result)
-      ?.filter((menu) =>
-        (pathname?.length ? pathname : '/').match(new RegExp(menu.rootPath)),
-      )
-      .pop()?.items ?? [];
-  items = items?.filter((item) => item.visible);
+  const menuItems = useSelector((state) => state.secondaryMenu?.result);
+  const items = getItemsByPath(menuItems, pathname)?.filter(
+    (item) => item.visible,
+  );
 
   useEffect(() => {
     dispatch(getSecondaryMenu());

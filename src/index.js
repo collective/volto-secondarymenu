@@ -1,9 +1,15 @@
 import { secondaryMenuReducer } from './reducers';
 import SecondaryMenuConfigurationWidget from './widget/SecondaryMenuConfigurationWidget';
 import { getSecondaryMenu } from './actions';
+import { getItemsByPath } from './utils';
 import SecondaryMenu from './components/SecondaryMenu';
 
-export { SecondaryMenuConfigurationWidget, getSecondaryMenu, SecondaryMenu };
+export {
+  SecondaryMenuConfigurationWidget,
+  getSecondaryMenu,
+  SecondaryMenu,
+  getItemsByPath,
+};
 
 export default (config) => {
   config.widgets.id = {

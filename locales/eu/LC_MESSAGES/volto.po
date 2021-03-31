@@ -52,6 +52,10 @@ msgid "secondarymenu-linkUrl_description"
 msgstr ""
 
 #: components/SecondaryMenu
+msgid "secondarymenu-menu-arialabel"
+msgstr ""
+
+#: components/SecondaryMenu
 msgid "secondarymenu-menu-selected"
 msgstr ""
 

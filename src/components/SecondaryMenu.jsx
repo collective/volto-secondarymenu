@@ -14,6 +14,10 @@ const messages = defineMessages({
     id: 'secondarymenu-menu-selected',
     defaultMessage: 'Selected menu',
   },
+  secondarymenu_aria: {
+    id: 'secondarymenu-menu-arialabel',
+    defaultMessage: 'Secondary menu',
+  },
 });
 
 const SecondaryMenu = ({ pathname }) => {
@@ -41,7 +45,11 @@ const SecondaryMenu = ({ pathname }) => {
 
   return (
     items?.length > 0 && (
-      <nav className="secondary-menu">
+      <nav
+        className="secondary-menu"
+        role="navigation"
+        aria-label={intl.formatMessage(messages.secondarymenu_aria)}
+      >
         <Menu stackable pointing secondary>
           {items.map((item, i) => {
             let url = item.href || item.linkUrl?.[0]?.['@id'] || '';

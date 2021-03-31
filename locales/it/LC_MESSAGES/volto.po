@@ -52,6 +52,10 @@ msgid "secondarymenu-linkUrl_description"
 msgstr "Scrivi un url esterno o seleziona un URL interno cliccando sul bottone a destra"
 
 #: components/SecondaryMenu
+msgid "secondarymenu-menu-arialabel"
+msgstr "Menu secondario"
+
+#: components/SecondaryMenu
 msgid "secondarymenu-menu-selected"
 msgstr "Menu selezionato"
 

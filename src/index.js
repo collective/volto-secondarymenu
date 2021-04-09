@@ -22,21 +22,21 @@ export default (config) => {
     secondaryMenu: secondaryMenuReducer,
   };
 
-  config.settings.asyncPropsExtenders = [
-    ...(config.settings.asyncPropsExtenders ?? []),
-    {
-      path: '/',
-      extend: (dispatchActions) => {
-        dispatchActions.push({
-          key: 'secondary-menu',
-          promise: ({ location, store: { dispatch } }) =>
-            __SERVER__ && dispatch(getSecondaryMenu()),
-        });
+  // config.settings.asyncPropsExtenders = [
+  //   ...(config.settings.asyncPropsExtenders ?? []),
+  //   {
+  //     path: '/',
+  //     extend: (dispatchActions) => {
+  //       dispatchActions.push({
+  //         key: 'secondary-menu',
+  //         promise: ({ location, store: { dispatch } }) =>
+  //           __SERVER__ && dispatch(getSecondaryMenu()),
+  //       });
 
-        return dispatchActions;
-      },
-    },
-  ];
+  //       return dispatchActions;
+  //     },
+  //   },
+  // ];
 
   return config;
 };

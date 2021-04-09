@@ -27,11 +27,17 @@ export default (config) => {
     {
       path: '/',
       extend: (dispatchActions) => {
-        dispatchActions.push({
-          key: 'secondary-menu',
-          promise: ({ location, store: { dispatch } }) =>
-            __SERVER__ && dispatch(getSecondaryMenu()),
-        });
+        if (
+          dispatchActions.filter(
+            (asyncAction) => asyncAction.key === 'secondary-menu',
+          ).length === 0
+        ) {
+          dispatchActions.push({
+            key: 'secondary-menu',
+            promise: ({ location, store: { dispatch } }) =>
+              __SERVER__ && dispatch(getSecondaryMenu()),
+          });
+        }
 
         return dispatchActions;
       },

@@ -29,7 +29,7 @@ msgstr "Elimina"
 
 #: widget/SecondaryMenuConfigurationForm
 msgid "secondarymenu-deletemenuitem-button"
-msgstr "Elimna la voce di menu"
+msgstr "Elimina la voce di menu"
 
 #: widget/SecondaryMenuConfigurationWidget
 msgid "secondarymenu-emptyActiveMenuItem"

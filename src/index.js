@@ -1,3 +1,4 @@
+import menuAltSVG from '@plone/volto/icons/menu-alt.svg';
 import { secondaryMenuReducer } from './reducers';
 import SecondaryMenuConfigurationWidget from './widget/SecondaryMenuConfigurationWidget';
 import { getSecondaryMenu } from './actions';
@@ -43,6 +44,8 @@ export default (config) => {
       },
     },
   ];
+
+  config.settings.controlPanelsIcons['secondary-menu-settings'] = menuAltSVG;
 
   return config;
 };

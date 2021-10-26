@@ -9,11 +9,14 @@
   "devDependencies": {
     "release-it": "*"
   },
+  "dependencies": {
+    "@plone/scripts": "*"
+  },
   "peerDependencies": {
-    "@plone/volto": ">=12.0.0"
+    "@plone/volto": ">=14.0.0"
   },
   "scripts": {
-    "i18n": "NODE_ENV=production node src/i18n.js",
+    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
     "release": "release-it"
   }
 }

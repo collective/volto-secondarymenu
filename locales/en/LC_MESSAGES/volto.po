@@ -11,74 +11,92 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
- #: widget/SecondaryMenuConfigurationWidget
+#: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Add menu path
 msgid "secondarymenu-add-rootpath"
 msgstr "Add menu path"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Add menu item
 msgid "secondarymenu-addmenuitem"
 msgstr "Add menu item"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Delete
 msgid "secondarymenu-delete-button"
 msgstr "Delete"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Delete menu path
 msgid "secondarymenu-delete-menupath"
 msgstr "Delete menu path"
 
 #: widget/SecondaryMenuConfigurationForm
+# defaultMessage: Delete menu item
 msgid "secondarymenu-deletemenuitem-button"
 msgstr "Delete menu item"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Select a menu item
 msgid "secondarymenu-emptyActiveMenuItem"
 msgstr "Select a menu item"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Select a menu path
 msgid "secondarymenu-emptyActiveMenuPath"
 msgstr "Select a menu path"
 
 #: widget/SecondaryMenuConfigurationForm
+# defaultMessage: In evidence
 msgid "secondarymenu-inevidence"
 msgstr "In evidence"
 
 #: widget/SecondaryMenuConfigurationForm
+# defaultMessage: Link
 msgid "secondarymenu-linkUrl"
 msgstr "Link"
 
 #: widget/SecondaryMenuConfigurationForm
+# defaultMessage: Type an external url, or select an internal url clicking on the right button
 msgid "secondarymenu-linkUrl_description"
 msgstr "Type an external url, or select an internal url clicking on the right button"
 
 #: components/SecondaryMenu
+# defaultMessage: Secondary menu
 msgid "secondarymenu-menu-arialabel"
 msgstr "Secondary menu"
 
 #: components/SecondaryMenu
+# defaultMessage: Selected menu
 msgid "secondarymenu-menu-selected"
 msgstr "Selected menu'"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Menu items
 msgid "secondarymenu-menuitems-header"
 msgstr "Menu items"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Move menu item down
 msgid "secondarymenu-move-menuitem-down"
 msgstr "Move menu item down"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Move menu item up
 msgid "secondarymenu-move-menuitem-up"
 msgstr "Move menu item up"
 
 #: widget/SecondaryMenuConfigurationWidget
+# defaultMessage: Root path
 msgid "secondarymenu-rootpath"
 msgstr "Root path"
 
 #: widget/SecondaryMenuConfigurationForm
+# defaultMessage: Title
 msgid "secondarymenu-title"
 msgstr "Title"
 
 #: widget/SecondaryMenuConfigurationForm
+# defaultMessage: Visible
 msgid "secondarymenu-visible"
 msgstr "Visible"

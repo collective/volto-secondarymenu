@@ -7,13 +7,12 @@
   "author": "collective",
   "license": "MIT",
   "devDependencies": {
+    "@plone/scripts": "v2.0.0",
     "release-it": "*"
   },
-  "dependencies": {
-    "@plone/scripts": "*"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "@plone/volto": ">=14.0.0"
+    "@plone/volto": ">=16.0.0-alpha.38"
   },
   "scripts": {
     "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",

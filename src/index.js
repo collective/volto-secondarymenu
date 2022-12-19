@@ -1,18 +1,25 @@
 import menuAltSVG from '@plone/volto/icons/menu-alt.svg';
 import { secondaryMenuReducer } from './reducers';
 import SecondaryMenuConfigurationWidget from './widget/SecondaryMenuConfigurationWidget';
+import SecondaryMenuConfigurationForm from './widget/SecondaryMenuConfigurationForm';
 import { getSecondaryMenu } from './actions';
 import { getItemsByPath } from './utils';
 import SecondaryMenu from './components/SecondaryMenu';
 
 export {
   SecondaryMenuConfigurationWidget,
+  SecondaryMenuConfigurationForm,
   getSecondaryMenu,
   SecondaryMenu,
   getItemsByPath,
 };
 
 export default (config) => {
+  config.registerComponent({
+    name: 'SecondaryMenuConfigurationForm',
+    component: SecondaryMenuConfigurationForm,
+  });
+
   config.widgets.id = {
     ...config.widgets.id,
     secondary_menu_configuration: SecondaryMenuConfigurationWidget,

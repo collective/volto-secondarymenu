@@ -6,10 +6,19 @@ To be used with mrs-developer, see [Volto docs](https://docs.voltocms.com/custom
 
 Created with [voltocli](https://github.com/nzambello/voltocli).
 
-## Usage
-
 > If you're using Volto < 12, then use [v1.1.0](https://github.com/collective/volto-secondarymenu/tree/v1.1.0)
 >
 > If you're using Volto < 16, then use [v2.2.0](https://github.com/collective/volto-secondarymenu/tree/v2.2.0)
 
-`Document your addon here`
+## Usage
+
+To customize the `SecondaryMenuConfigurationForm` component, you can now create your own component in your site and replace it using the Volto component registry in your site config file:
+
+```javascript
+import MySecondaryMenuConfigurationForm from './src/MySecondaryMenuConfigurationForm';
+
+config.registerComponent({
+  name: 'SecondaryMenuConfigurationForm',
+  component: MySecondaryMenuConfigurationForm,
+});
+```

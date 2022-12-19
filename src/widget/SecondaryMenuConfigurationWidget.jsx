@@ -9,10 +9,9 @@ import {
   Segment,
   Header,
 } from 'semantic-ui-react';
-import { TextWidget } from '@plone/volto/components';
+import { TextWidget, Component } from '@plone/volto/components';
 import { flattenToAppURL } from '@plone/volto/helpers/Url/Url';
 
-import SecondaryMenuConfigurationForm from './SecondaryMenuConfigurationForm';
 import './secondary_menu_configuration.css';
 
 const messages = defineMessages({
@@ -314,7 +313,8 @@ const SecondaryMenuConfigurationWidget = ({
                         {activeMenuItem > -1 &&
                         activeMenuItem <
                           menuConfiguration[activeMenu].items?.length ? (
-                          <SecondaryMenuConfigurationForm
+                          <Component
+                            componentName="SecondaryMenuConfigurationForm"
                             id={`${activeMenu}-${activeMenuItem}`}
                             menuItem={
                               menuConfiguration[activeMenu].items[

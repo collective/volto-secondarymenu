@@ -1,102 +1,111 @@
+# Translation of volto.pot to Spanish
+# Mikel Larreategi <mlarreategi@codesyntax.com>, 2022.
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Plone\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language: \n"
-"Language-Team: \n"
-"Content-Type: \n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"POT-Creation-Date: 2021-10-26T08:29:03.310Z\n"
+"PO-Revision-Date: 2023-05-17 14:02-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language: es\n"
+"Language-Team: ES <LL@li.org>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Preferred-Encodings: utf-8\n"
+"MIME-Version: 1.0\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Domain: volto\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Add menu path
 msgid "secondarymenu-add-rootpath"
-msgstr ""
+msgstr "Añadir ruta de menú"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Add menu item
 msgid "secondarymenu-addmenuitem"
-msgstr ""
+msgstr "Añadir elemento de menú"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Delete
 msgid "secondarymenu-delete-button"
-msgstr ""
+msgstr "Eliminar"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Delete menu path
 msgid "secondarymenu-delete-menupath"
-msgstr ""
+msgstr "Eliminar ruta de menú"
 
 #: widget/SecondaryMenuConfigurationForm
 # defaultMessage: Delete menu item
 msgid "secondarymenu-deletemenuitem-button"
-msgstr ""
+msgstr "Eliminar elemento de menú"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Select a menu item
 msgid "secondarymenu-emptyActiveMenuItem"
-msgstr ""
+msgstr "Seleccione un elemento del menú"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Select a menu path
 msgid "secondarymenu-emptyActiveMenuPath"
-msgstr ""
+msgstr "Seleccione una ruta de menú"
 
 #: widget/SecondaryMenuConfigurationForm
 # defaultMessage: In evidence
 msgid "secondarymenu-inevidence"
-msgstr ""
+msgstr "En evidencia"
 
 #: widget/SecondaryMenuConfigurationForm
 # defaultMessage: Link
 msgid "secondarymenu-linkUrl"
-msgstr ""
+msgstr "Enlace"
 
 #: widget/SecondaryMenuConfigurationForm
 # defaultMessage: Type an external url, or select an internal url clicking on the right button
 msgid "secondarymenu-linkUrl_description"
-msgstr ""
+msgstr "Escriba una URL externa o seleccione una interna URL haciendo clic en el botón derecho"
 
 #: components/SecondaryMenu
 # defaultMessage: Secondary menu
 msgid "secondarymenu-menu-arialabel"
-msgstr ""
+msgstr "Menú secundario"
 
 #: components/SecondaryMenu
 # defaultMessage: Selected menu
 msgid "secondarymenu-menu-selected"
-msgstr ""
+msgstr "Menú seleccionado"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Menu items
 msgid "secondarymenu-menuitems-header"
-msgstr ""
+msgstr "Elementos de menú"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Move menu item down
 msgid "secondarymenu-move-menuitem-down"
-msgstr ""
+msgstr "Mover elemento de menú hacia abajo"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Move menu item up
 msgid "secondarymenu-move-menuitem-up"
-msgstr ""
+msgstr "Mover elemento de menú hacia arriba"
 
 #: widget/SecondaryMenuConfigurationWidget
 # defaultMessage: Root path
 msgid "secondarymenu-rootpath"
-msgstr ""
+msgstr "Ruta raíz"
 
 #: widget/SecondaryMenuConfigurationForm
 # defaultMessage: Title
 msgid "secondarymenu-title"
-msgstr ""
+msgstr "Título"
 
 #: widget/SecondaryMenuConfigurationForm
 # defaultMessage: Visible
 msgid "secondarymenu-visible"
-msgstr ""
+msgstr "Visibile"

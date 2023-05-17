@@ -1,5 +1,4 @@
 # Translation of volto.pot to Spanish
-# Mikel Larreategi <mlarreategi@codesyntax.com>, 2022.
 # Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2023.
 msgid ""
 msgstr ""

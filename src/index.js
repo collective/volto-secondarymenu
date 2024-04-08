@@ -1,7 +1,9 @@
 import menuAltSVG from '@plone/volto/icons/menu-alt.svg';
 import { secondaryMenuReducer } from './reducers';
-import SecondaryMenuConfigurationWidget from './widget/SecondaryMenuConfigurationWidget';
-import SecondaryMenuConfigurationForm from './widget/SecondaryMenuConfigurationForm';
+import {
+  SecondaryMenuConfigurationWidget,
+  SecondaryMenuConfigurationForm,
+} from './widget';
 import { getSecondaryMenu } from './actions';
 import { getItemsByPath } from './utils';
 import SecondaryMenu from './components/SecondaryMenu';

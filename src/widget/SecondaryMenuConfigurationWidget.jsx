@@ -9,7 +9,8 @@ import {
   Segment,
   Header,
 } from 'semantic-ui-react';
-import { TextWidget, Component } from '@plone/volto/components';
+import { TextWidget } from '@plone/volto/components/manage/Widgets';
+import Component from '@plone/volto/components/theme/Component/Component';
 import { flattenToAppURL } from '@plone/volto/helpers/Url/Url';
 
 import './secondary_menu_configuration.css';

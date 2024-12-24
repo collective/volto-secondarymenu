@@ -1,6 +1,6 @@
 {
   "name": "volto-secondarymenu",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Volto addon for a customizable secondary menu",
   "main": "src/index.js",
   "repository": "https://github.com/collective/volto-secondarymenu.git",

@@ -68,6 +68,7 @@ const SecondaryMenuConfigurationForm = ({
     });
 
     return () => {
+      document.querySelector('form.ui.form') &&
       document
         .querySelector('form.ui.form')
         .removeEventListener('click', preventClick);

@@ -48,34 +48,23 @@ const SecondaryMenuConfigurationForm = ({
 }) => {
   const intl = useIntl();
 
-  const preventClick = (e) => {
-    e.preventDefault();
-  };
-
   const preventEnter = (e) => {
     if (e.code === 'Enter') {
-      preventClick(e);
+      e.preventDefault();
     }
   };
 
   useEffect(() => {
-    document
-      .querySelector('form.ui.form')
-      .addEventListener('click', preventClick);
-
     document.querySelectorAll('form.ui.form input').forEach((item) => {
       item.addEventListener('keypress', preventEnter);
     });
 
     return () => {
-      document.querySelector('form.ui.form') &&
-      document
-        .querySelector('form.ui.form')
-        .removeEventListener('click', preventClick);
       document.querySelectorAll('form.ui.form input').forEach((item) => {
-        item.removeEventListener('keypress', preventEnter);
+        item?.removeEventListener('keypress', preventEnter);
       });
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onChangeFormData = (id, value) => {

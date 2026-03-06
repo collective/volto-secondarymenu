@@ -4,10 +4,8 @@ import { defineMessages, useIntl } from 'react-intl';
 import { Form, Grid, Button } from 'semantic-ui-react';
 import { flattenToAppURL } from '@plone/volto/helpers/Url/Url';
 import withObjectBrowser from '@plone/volto/components/manage/Sidebar/ObjectBrowser';
-import {
-  TextWidget,
-  CheckboxWidget,
-} from '@plone/volto/components/manage/Widgets';
+import TextWidget from '@plone/volto/components/manage/Widgets/TextWidget';
+import CheckboxWidget from '@plone/volto/components/manage/Widgets/CheckboxWidget';
 import navTreeSVG from '@plone/volto/icons/nav.svg';
 import clearSVG from '@plone/volto/icons/clear.svg';
 
